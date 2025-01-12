@@ -2,10 +2,10 @@ import { useState, useCallback } from "react";
 import { z } from "zod";
 import { useForm } from "@tanstack/react-form";
 
-import { API_URL, POST, PUT } from "../../constants/api";
-import useRequest from "../../hooks/useRequest";
-import Popup from "../../components/popup";
-import FormField from "../../components/formField";
+import { API_URL, POST, PUT } from "../constants/api";
+import useRequest from "../hooks/useRequest";
+import Popup from "../components/popup";
+import FormField from "../components/formField";
 
 const defaultValues = {
   email: "",

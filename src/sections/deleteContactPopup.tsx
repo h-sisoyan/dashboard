@@ -1,10 +1,10 @@
 import { useCallback } from "react";
 import { useNavigate } from "@tanstack/react-router";
 
-import { DASHBOARD } from "../../constants/paths";
-import { API_URL, DELETE, SUCCESS } from "../../constants/api";
-import Popup from "../../components/popup";
-import useRequest from "../../hooks/useRequest";
+import { DASHBOARD } from "../constants/paths";
+import { API_URL, DELETE, SUCCESS } from "../constants/api";
+import Popup from "../components/popup";
+import useRequest from "../hooks/useRequest";
 
 const DeleteContactPopup = ({
   isOpen,

@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "@tanstack/react-router";
 
-import { SUCCESS } from "../../constants/api";
-import { DASHBOARD } from "../../constants/paths";
-import CreateEditContactPopup from "../../sections/createEditContactPopup";
+import { SUCCESS } from "../constants/api";
+import { DASHBOARD } from "../constants/paths";
+import CreateEditContactPopup from "./createEditContactPopup";
 
 const ContactListWithSearch = ({
   data,

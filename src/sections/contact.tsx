@@ -1,12 +1,12 @@
 import { useState, useCallback } from "react";
 import { useLocation, useNavigate } from "@tanstack/react-router";
 
-import avatar from "../../assets/avatar.png";
-import { DASHBOARD } from "../../constants/paths.ts";
-import { API_URL, SUCCESS } from "../../constants/api";
-import useCachedFetch from "../../hooks/useCachedFetch.ts";
-import DeleteContactPopup from "../../sections/deleteContactPopup";
-import CreateEditContactPopup from "../../sections/createEditContactPopup";
+import avatar from "../assets/avatar.png";
+import { DASHBOARD } from "../constants/paths.ts";
+import { API_URL, SUCCESS } from "../constants/api";
+import useCachedFetch from "../hooks/useCachedFetch.ts";
+import DeleteContactPopup from "./deleteContactPopup.tsx";
+import CreateEditContactPopup from "./createEditContactPopup";
 
 const Contact = ({ refetch }: { refetch: () => void }) => {
   const [isEditPopupOpen, setIsEditPopupOpen] = useState(false);
